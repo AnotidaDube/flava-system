@@ -13,7 +13,7 @@ const handleLogin = async () => {
   errorMessage.value = ''
 
   try {
-    const response = await fetch('http://localhost:8000/api/login/',  {
+    const response = await fetch('https://flava-backend.onrender.com/api/login/',  {
       method: 'POST',
       credentials: 'include', // <-- THIS IS THE CRITICAL FIX
       headers: { 'Content-Type': 'application/json' },

@@ -8,7 +8,7 @@ const isLoading = ref(true)
 
 const fetchLiveRadar = async () => {
   try {
-    const response = await fetch('http://localhost:8000/api/radar/')
+    const response = await fetch('https://flava-backend.onrender.com/api/radar/')
     activeReps.value = await response.json()
   } catch (error) {
     console.error("Failed to load radar:", error)

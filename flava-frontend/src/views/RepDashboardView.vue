@@ -31,7 +31,7 @@ const discrepancy = computed(() => {
 
 const fetchDashboardData = async () => {
   try {
-    const response = await fetch('http://localhost:8000/api/my-dashboard/', {
+    const response = await fetch('https://flava-backend.onrender.com/api/my-dashboard/', { // <-- CRITICAL FIX HERE
       credentials: 'include' // CRITICAL: This sends the secure login cookie to Django
     })
 

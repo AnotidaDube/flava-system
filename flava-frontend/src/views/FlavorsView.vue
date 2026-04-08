@@ -9,7 +9,7 @@ const products = [
     description: 'A complete, generous scoop of rich, velvety chocolate ice cream in a crisp, sweet waffle cone.', 
     theme: 'bg-amber-800',
     lightTheme: 'bg-amber-50',
-    image: '/chocolate.webp' //
+    image: '/chocolate.webp'
   },
   { 
     id: 2, 
@@ -17,7 +17,7 @@ const products = [
     description: 'Smooth vanilla swirled with thick, buttery caramel ribbons, forming a complete scoop in a crunchy cone.', 
     theme: 'bg-orange-500',
     lightTheme: 'bg-orange-50',
-    image: '/caramel.webp' //
+    image: '/caramel.webp'
   }
 ]
 
@@ -33,7 +33,7 @@ const matchedRep = ref(null)
 // Pull live rep locations from our Django Radar API
 const fetchActiveReps = async () => {
   try {
-    const response = await fetch('http://localhost:8000/api/radar/')
+    const response = await fetch('https://flava-backend.onrender.com/api/radar/')
     if (response.ok) {
       activeReps.value = await response.json()
     }

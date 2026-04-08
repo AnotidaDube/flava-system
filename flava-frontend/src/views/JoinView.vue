@@ -5,7 +5,7 @@ const formData = ref({
   fullName: '',
   idNumber: '',
   phone: '',
-  email: '', // Added email field
+  email: '', 
   age: '',
   maritalStatus: 'Single',
   agreedToTerms: false
@@ -25,7 +25,7 @@ const submitApplication = async () => {
   errorMessage.value = ''
 
   try {
-    const response = await fetch('http://localhost:8000/api/apply/', {
+    const response = await fetch('https://flava-backend.onrender.com/api/apply/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData.value)
