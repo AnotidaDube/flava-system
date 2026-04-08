@@ -127,7 +127,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://deluxe-tartufo-3f94da.netlify.app/",
+    "https://deluxe-tartufo-3f94da.netlify.app",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
