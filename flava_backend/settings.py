@@ -132,6 +132,13 @@ CORS_ALLOWED_ORIGINS = [
 ]
 CORS_ALLOW_CREDENTIALS = True
 
+# Allow cookies to be shared between Render and Netlify
+SESSION_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'
+CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = ['https://deluxe-tartufo-3f94da.netlify.app']
+
 # Tell DRF to use standard JSON rendering and basic permissions to start
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
