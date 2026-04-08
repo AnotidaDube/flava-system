@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-et9j+mcvf@0_ufm55^*vsxa#92)ro7!^_h1iowxrvkpx=zd_m3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -126,6 +126,7 @@ STATIC_URL = 'static/'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://deluxe-tartufo-3f94da.netlify.app/",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
